@@ -1,0 +1,206 @@
+:root {
+  --blue: #2b3990;
+  --red: #ed1c24;
+  --dark: #333333;
+  --muted: #666666;
+  --white: #ffffff;
+  --bg: #f8f9fa;
+  --ease: all 0.3s ease;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  color: var(--dark);
+  line-height: 1.6;
+  background: var(--bg);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--ease);
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button {
+  font-family: inherit;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Column containers */
+.trusted-inner,
+.specs-inner,
+.features-inner,
+.faq-inner,
+.apps-inner,
+.process-inner,
+.testimonials-inner,
+.contact-inner,
+.footer-inner {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+
+/* button designv */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  border: none;
+  transition: var(--ease);
+}
+.btn-primary {
+  background: var(--blue);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(43, 57, 144, 0.2);
+}
+.btn-primary:hover {
+  background: #1e2a70;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: var(--bg);
+  color: var(--dark);
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background: #eee;
+}
+.btn-large {
+  padding: 1.2rem 2.5rem;
+  flex: 1;
+  text-align: center;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--white);
+}
+.btn-outline:hover {
+  background: var(--white);
+  color: #0a1128;
+  border-color: var(--white);
+}
+.btn-dark {
+  background: #111827;
+  color: var(--white);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+.btn-dark:hover {
+  background: #000000;
+}
+
+/* ----- Navigation Header ------ */
+.topbar {
+  background: var(--white);
+  padding: 1.2rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  box-shadow: var(--shadow);
+}
+.logo img {
+  height: 63px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+.nav-link {
+  font-weight: 500;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-link:hover {
+  color: var(--blue);
+}
+.nav-link i {
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+
+/* --- DropDown --- */
+
+
+.nav-dropdown {
+  position: relative;
+  padding: 1rem 0;
+}
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: var(--white);
+  min-width: 200px;
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+  padding: 1rem 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s, opacity 0.3s;
+  border-top: 3px solid var(--blue);
+}
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.dropdown:hover .dropbtn i {
+  transform: rotate(180deg);
+}
+.dropdown-content li a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+}
+.dropdown-content li a:hover {
+  background: #f0f2f8;
+  color: var(--blue);
+}
+
+.mobile-flip {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--blue);
+  cursor: pointer;
+}
