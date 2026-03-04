@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const list = document.getElementById('faq-list');
         if (!list) return;
         list.innerHTML = faqs.map((f, i) => `
-            <div class="faq-item ${i === 0 ? 'open' : ''}">
+            <div class="faq-item ">
                 <button class="faq-question">
                     ${f.question}
                     <i class="fas fa-chevron-down"></i>
