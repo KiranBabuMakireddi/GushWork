@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Applcaition dipaly from json file logic
     async function initApplications() {
         try {
-            const res = await fetch('public/json/applications.json');
+            const res = await fetch('/public/json/applications.json');
             if (!res.ok) throw new Error(res.status);
             renderApplications(await res.json());
         } catch (err) { console.warn('applications.json:', err); }
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function initProcess() {
         try {
-            const res = await fetch('public/json/process.json');
+            const res = await fetch('/public/json/process.json');
             if (!res.ok) throw new Error(res.status);
             processData = await res.json();
             renderProcessTabs();
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p>${step.description}</p>
             ${step.bullets.map(b => `<div class="process-bullet">${b}</div>`).join('')}`;
         const img = document.getElementById('process-img');
-        if (img) { img.src = step.image || 'public/product_pipe.png'; img.alt = step.title; }
+        if (img) { img.src = step.image || '/public/product_pipe.png'; img.alt = step.title; }
     }
 
     const shiftStep = d => {
@@ -230,7 +230,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Testimonial render logic fro json file
     async function initTestimonials() {
         try {
-            const res = await fetch('public/json/testimonials.json');
+            const res = await fetch('/public/json/testimonials.json');
             if (!res.ok) throw new Error(res.status);
             renderTestimonials(await res.json());
         } catch (err) { console.warn('testimonials.json:', err); }
@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Faq section accordian logic from json file
     async function initFaq() {
         try {
-            const res = await fetch('public/json/faq.json');
+            const res = await fetch('/public/json/faq.json');
             if (!res.ok) throw new Error(res.status);
             renderFaq(await res.json());
         } catch (err) { console.warn('faq.json:', err); }
