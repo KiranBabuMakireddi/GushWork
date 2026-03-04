@@ -1,0 +1,75 @@
+
+[
+    {
+        "id": "hdpe-pipes",
+        "name": "HDPE Pipes",
+        "title": "Premium HDPE Pipes & Coils for Modern Infrastructure",
+        "image": "public/product_pipe.png",
+        "breadcrumbs": ["Products", "HDPE Pipes"],
+        "features": [
+            "Leak-Proof Fusion Joints",
+            "Chemical Resistance",
+            "50+ Year Service Life",
+            "Flexible Installation",
+            "High Impact Strength"
+        ],
+        "priceRange": "₹4,80,000 - 7,90,000",
+        "shipping": "6-12 days",
+        "returns": "If returned within 7 days",
+        "certifications": ["ISO Certified", "BIS Certified", "CE Certified"]
+    },
+    {
+        "id": "sprinkler-pipes",
+        "name": "Sprinkler Pipes",
+        "title": "Durable Sprinkler System Pipes for Efficient Irrigation",
+        "image": "public/product_pipe.png",
+        "breadcrumbs": ["Products", "Sprinkler Pipes"],
+        "features": [
+            "UV Resistance",
+            "Lightweight & Portable",
+            "Quick Coupling System",
+            "Corrosion Proof",
+            "Uniform Water Distribution"
+        ],
+        "priceRange": "₹2,50,000 - 4,20,000",
+        "shipping": "4-8 days",
+        "returns": "If returned within 10 days",
+        "certifications": ["ISO Certified", "BIS Certified"]
+    },
+    {
+        "id": "plb-ducts",
+        "name": "PLB Ducts",
+        "title": "Permanently Lubricated Ducts for Optical Fiber Cables",
+        "image": "public/product_pipe.png",
+        "breadcrumbs": ["Products", "PLB Ducts"],
+        "features": [
+            "Low Friction Inner Layer",
+            "Crush Resistance",
+            "Easy Cable Blowing",
+            "Environmental Stress Protection",
+            "Long Length Coils"
+        ],
+        "priceRange": "₹3,20,000 - 5,50,000",
+        "shipping": "7-14 days",
+        "returns": "If returned within 7 days",
+        "certifications": ["ISO Certified", "TEC Approved"]
+    },
+    {
+        "id": "column-pipes",
+        "name": "Column Pipes",
+        "title": "High-Pressure Submersible Column Pipes",
+        "image": "public/product_pipe.png",
+        "breadcrumbs": ["Products", "Column Pipes"],
+        "features": [
+            "Square Thread Design",
+            "Leak Proof Locking",
+            "High Load Bearing Capacity",
+            "Lead Free & Lead Proof",
+            "Smooth Flow Performance"
+        ],
+        "priceRange": "₹1,80,000 - 3,50,000",
+        "shipping": "5-10 days",
+        "returns": "If returned within 15 days",
+        "certifications": ["ISO Certified", "BIS Certified"]
+    }
+]

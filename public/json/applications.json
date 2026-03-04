@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Fishnet Manufacturing",
+        "description": "High-performance twisting solutions for packaging yarn, strapping materials, and reinforcement threads used in modern packaging applications.",
+        "image": "public/application.png"
+    },
+    {
+        "title": "Agricultural Irrigation",
+        "description": "Durable HDPE pipes engineered for drip and sprinkler irrigation systems delivering consistent water pressure across large fields.",
+        "image": "public/application.png"
+    },
+    {
+        "title": "Telecom Infrastructure",
+        "description": "PLB ducts designed for optical fiber cable laying, offering low friction inner walls and high crush resistance for long-term reliability.",
+        "image": "public/application.png"
+    },
+    {
+        "title": "Municipal Water Supply",
+        "description": "Large-diameter HDPE pipes certified for potable water distribution, resistant to scaling and corrosion over a 50+ year service life.",
+        "image": "public/application.png"
+    },
+    {
+        "title": "Industrial Fluid Transport",
+        "description": "Chemical-resistant pipes ideal for transporting acids, alkalis, and industrial fluids in manufacturing and processing plants.",
+        "image": "public/application.png"
+    }
+]

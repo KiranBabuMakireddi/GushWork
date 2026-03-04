@@ -1,0 +1,58 @@
+[
+    {
+        "label": "Raw Material",
+        "title": "High-Grade Raw Material Selection",
+        "description": "Vacuum sizing tanks ensure precise outer diameter while internal pressure maintains perfect roundness and wall thickness uniformity.",
+        "bullets": ["PE100 grade material", "Optimal molecular weight distribution"],
+        "image": "public/product_pipe.png"
+    },
+    {
+        "label": "Extrusion",
+        "title": "Precision Extrusion Process",
+        "description": "Material is melted and forced through a calibrated die at controlled temperature and speed to form a continuous pipe profile.",
+        "bullets": ["Temperature-controlled barrel zones", "Consistent melt flow index"],
+        "image": "public/product_pipe.png"
+    },
+    {
+        "label": "Cooling",
+        "title": "Controlled Cooling Bath",
+        "description": "The extruded pipe passes through a water cooling trough maintaining dimensional stability and surface finish quality.",
+        "bullets": ["Vacuum calibration for precise OD", "Uniform wall thickness throughout"],
+        "image": "public/product_pipe.png"
+    },
+    {
+        "label": "Sizing",
+        "title": "Diameter Sizing & Calibration",
+        "description": "Inline gauging systems continuously measure outer diameter and wall thickness, feeding data back to the extrusion line.",
+        "bullets": ["Real-time diameter measurement", "Auto-adjustment for tolerance control"],
+        "image": "public/product_pipe.png"
+    },
+    {
+        "label": "Quality Control",
+        "title": "In-Process Quality Checks",
+        "description": "Each production run is monitored against IS 4984 and ISO 4427 standards through inline and offline testing.",
+        "bullets": ["Pressure testing at rated PN", "Visual and dimensional inspection"],
+        "image": "public/product_pipe.png"
+    },
+    {
+        "label": "Marking",
+        "title": "Product Identification Marking",
+        "description": "Pipes are inkjet-marked with product details including size, pressure rating, standard, batch number, and date of manufacture.",
+        "bullets": ["Permanent inkjet marking", "Full traceability per batch"],
+        "image": "public/product_pipe.png"
+    },
+    {
+        "label": "Cutting",
+        "title": "Precision Cutting to Length",
+        "description": "Automated cutters slice pipes to exact specified lengths with clean, square ends ready for immediate installation or coiling.",
+        "bullets": ["Servo-controlled cut length", "Burr-free pipe ends"],
+        "image": "public/product_pipe.png"
+    },
+    {
+        "label": "Packaging",
+        "title": "Secure Packaging & Dispatch",
+        "description": "Finished pipes are bundled, labelled, and prepared for dispatch with full documentation including test certificates.",
+        "bullets": ["Bundle strapping for safe transit", "Test certificate included per lot"],
+        "image": "public/product_pipe.png"
+    }
+]
