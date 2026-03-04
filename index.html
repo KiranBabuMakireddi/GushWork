@@ -12,7 +12,7 @@
     <header class="topbar">
         <div class="container">
             <a href="#" class="logo">
-                <img src="/public/logo.png" alt="Logo of resource">
+                <img src="/public/headerlogo.png" alt="Logo of resource">
             </a>
             <nav>
                 <ul class="nav-links">
@@ -48,6 +48,31 @@
                 </ul>
             </div>
         </nav>
+
+
+        <!-- Product carousel with all relevent details -->
+
+        <section class="product-view">
+             <div class="container product-view__grid">
+                <!-- Carousel with zoom functionality -->
+                <div class="product-gallery">
+                    <div class="main-image-container" id="zoom-container">
+                        <img src="/public/product_pipe.png" alt="Product Image" id="main-product-image">
+                        <div class="zoom-lens" id="zoom-lens"></div>
+                        <div class="zoom-result" id="zoom-result"></div>
+                        <button class="gallery-nav prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="thumbnail-carousel">
+                        <div class="thumb active"><img src="/public/product_pipe.png" alt="Thumb 1"></div>
+                        <div class="thumb"><img src="/public/product_pipe.png" alt="Thumb 2"></div>
+                        <div class="thumb"><img src="/public/product_pipe.png" alt="Thumb 3"></div>
+                        <div class="thumb"><img src="/public/product_pipe.png" alt="Thumb 4"></div>
+                        <div class="thumb"><img src="/public/product_pipe.png" alt="Thumb 5"></div>
+                        <div class="thumb"><img src="/public/product_pipe.png" alt="Thumb 6"></div>
+                    </div>
+                </div>
+        </section>
 
     </main>
  

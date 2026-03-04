@@ -229,3 +229,15 @@ button {
   color: var(--blue);
   font-weight: 700;
 }
+
+/* --- product view with carousel and zoom functionality ---*/
+.product-view {
+  padding: 3rem 0 5rem;
+  background: var(--white);
+}
+.product-view__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
