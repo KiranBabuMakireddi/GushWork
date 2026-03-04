@@ -1,20 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gushwork | Mangalam HDPE Pipes</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <!-- Sticky Navigation section -->
+    <!-- Sticky Top Bar section -->
     <header class="topbar">
         <div class="container">
             <a href="#" class="logo">
-                <img src="/public/headerlogo.png" alt="Logo of resource" />
+                <img src="/public/headerlogo.png" alt="Mangalam HDPE Pipes Logo">
             </a>
             <nav>
                 <ul class="nav-links">
@@ -25,13 +23,9 @@
                         </a>
                         <ul class="dropdown-content">
                             <li><a href="#" data-product="hdpe-pipes">HDPE Pipes</a></li>
-                            <li>
-                                <a href="#" data-product="sprinkler-pipes">Sprinkler Pipes</a>
-                            </li>
+                            <li><a href="#" data-product="sprinkler-pipes">Sprinkler Pipes</a></li>
                             <li><a href="#" data-product="plb-ducts">PLB Ducts</a></li>
-                            <li>
-                                <a href="#" data-product="column-pipes">Column Pipes</a>
-                            </li>
+                            <li><a href="#" data-product="column-pipes">Column Pipes</a></li>
                         </ul>
                     </li>
                     <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
@@ -44,64 +38,47 @@
     </header>
 
     <main>
-        <!-- Product Navigation section of the product -->
-        <nav class="productnavigation-container">
+        <!-- Breadcrum section of the product -->
+        <nav class="breadcrumb-container">
             <div class="container">
                 <ul class="breadcrumbs">
                     <li><a href="#">Products</a></li>
-                    <li>
-                        <span class="active" id="current-breadcrumb">HDPE Pipes</span>
-                    </li>
+                    <li><span class="active" id="current-breadcrumb">HDPE Pipes</span></li>
                 </ul>
             </div>
         </nav>
 
-        <!-- Product carousel with all relevent details -->
-
-        <section class="product-view">
-            <div class="container product-view__grid">
-                <!-- Carousel with zoom functionality -->
-                <div class="product-gallery__main">
+        <!-- Product carousel with details -->
+        <section class="product-showcase">
+            <div class="container showcase-grid">
+                <!-- Carousel with zoom -->
+                <div class="product-gallery">
                     <div class="main-image-container" id="zoom-container">
-                        <img src="/public/product_pipes.png" alt="Product Image" id="main-product-image" />
+                        <img src="/public/product_pipes.png" alt="Product Image" id="main-product-image">
                         <div class="zoom-lens" id="zoom-lens"></div>
                         <div class="zoom-result" id="zoom-result"></div>
-                        <button class="gallery-nav prev" aria-label="Previous image">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="gallery-nav next" aria-label="Next image">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
+                        <button class="gallery-nav prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
                     </div>
                     <div class="thumbnail-carousel">
-                        <div class="thumb active">
-                            <img src="/public/product_pipes.png" alt="Thumb 1" />
-                        </div>
-                        <div class="thumb">
-                            <img src="/public/product_pipes.png" alt="Thumb 2" />
-                        </div>
-                        <div class="thumb">
-                            <img src="/public/product_pipes.png" alt="Thumb 3" />
-                        </div>
-                        <div class="thumb">
-                            <img src="/public/product_pipes.png" alt="Thumb 4" />
-                        </div>
-                        <div class="thumb">
-                            <img src="/public/product_pipes.png" alt="Thumb 5" />
-                        </div>
-                        <div class="thumb">
-                            <img src="/public/product_pipes.png" alt="Thumb 6" />
-                        </div>
+                        <div class="thumb active"><img src="/public/product_pipes.png" alt="Thumb 1"></div>
+                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 2"></div>
+                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 3"></div>
+                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 4"></div>
+                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 5"></div>
+                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 6"></div>
                     </div>
                 </div>
 
-                <!-- Product Descriptions -->
+                <!-- Product deatils -->
                 <div class="product-info">
-                    <div class="certification-badges" id="product-badges"></div>
+                    <div class="certification-badges" id="product-badges">
+                    </div>
                     <h1 class="product-title" id="product-title">
                         Premium HDPE Pipes &amp; Coils for Modern Infrastructure
                     </h1>
-                    <ul class="product-features" id="product-features"></ul>
+                    <ul class="product-features" id="product-features">
+                    </ul>
                     <div class="product-meta-card">
                         <div class="price-section">
                             <span class="label">Price Range</span>
@@ -116,9 +93,7 @@
                         </div>
                     </div>
                     <div class="product-actions">
-                        <button id="btn-get-quote" class="btn btn-primary btn-large">
-                            Get Custom Quote
-                        </button>
+                        <button id="btn-get-quote" class="btn btn-primary btn-large">Get Custom Quote</button>
                         <a href="#tech-spec" class="btn btn-secondary btn-large">
                             View Technical Specs <i class="fas fa-chevron-right"></i>
                         </a>
@@ -127,436 +102,325 @@
             </div>
         </section>
 
-        <!-- Product footer section -->
+        <!-- Product footer -->
         <section class="trusted-by">
             <div class="container trusted-inner">
                 <p class="section-label">Trusted by Hundreds of Companies Globally</p>
                 <div class="logo-ticker">
                     <div class="ticker-track">
-                        <div class="ticker-item">
-                            <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
-                        </div>
-                        <div class="ticker-item">
-                            <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
-                        </div>
-                        <div class="ticker-item">
-                            <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
-                        </div>
-                        <div class="ticker-item">
-                            <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
-                        </div>
-                        <div class="ticker-item">
-                            <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
-                        </div>
-                        <div class="ticker-item">
-                            <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
-                        </div>
+                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
+                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
+                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
+                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
+                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
+                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
                         <!-- Duplicates for seamless loop -->
-                        <div class="ticker-item">
-                            <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
-                        </div>
-                        <div class="ticker-item">
-                            <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
-                        </div>
-                        <div class="ticker-item">
-                            <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
-                        </div>
+                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
+                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
+                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Technica specification  -->
-        <section class="specs-section" id="tech-spec">
-            <div class="container specs-inner">
-                <div class="specs-header">
-                    <h2 class="specs-title">Technical Specifications at a Glance</h2>
-                    <p class="specs-subtitle">
-                        Comprehensive performance data demonstrating our commitment to
-                        quality and engineering excellence.
-                    </p>
-                </div>
-                <div class="specs-table-container">
-                    <table class="specs-table">
-                        <thead>
-                            <tr>
-                                <th>PARAMETER</th>
-                                <th>SPECIFICATION</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="param">Pipe Diameter Range</td>
-                                <td>20mm to 1600mm (¾" to 63")</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Pressure Ratings</td>
-                                <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Standard Dimension Ratio</td>
-                                <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Operating Temperature</td>
-                                <td>−40°C to +80°C (−40°F to +176°F)</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Service Life</td>
-                                <td>50+ Years (at 20°C, PN 10)</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Material Density</td>
-                                <td>0.95 – 0.96 g/cm³</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Certification Standards</td>
-                                <td>IS 4984, ISO 4427, ASTM D3035</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Joint Type</td>
-                                <td>Butt Fusion, Electrofusion, Mechanical</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Coil Lengths</td>
-                                <td>Up to 500m (for smaller diameters)</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Country of Origin</td>
-                                <td>🇮🇳 India</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="specs-actions">
-                    <button id="download-specs" class="btn btn-outline btn-large">
-                        <i class="fas fa-download"></i> Download Full Technical Datasheet
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features section -->
-        <section id="about" class="features-section">
-            <div class="container features-inner">
-                <div class="features-header">
-                    <h2>Built to Last. Engineered to Perform.</h2>
-                    <p>
-                        From bulk bags to technical threads, Meera delivers precision
-                        solutions for every stage of your packaging process.
-                    </p>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card highlighted">
-                        <div class="feature-icon"><i class="fas fa-flask"></i></div>
-                        <h3>Superior Chemical Resistance</h3>
-                        <p>
-                            HDPE pipes resist a wide range of chemicals, acids, and alkalis.
-                            Unlike metal pipes, they won't corrode, rust, or scale, ensuring
-                            pure water quality and extended service life in aggressive
-                            environments.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bezier-curve"></i>
-                        </div>
-                        <h3>Exceptional Flexibility &amp; Durability</h3>
-                        <p>
-                            HDPE pipes resist a wide range of chemicals, acids, and alkalis.
-                            Unlike metal pipes, they won't corrode, rust, or scale, ensuring
-                            pure water quality and extended service life in aggressive
-                            environments.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-cube"></i></div>
-                        <h3>Leak-Proof Fusion Welding</h3>
-                        <p>
-                            HDPE pipes resist a wide range of chemicals, acids, and alkalis.
-                            Unlike metal pipes, they won't corrode, rust, or scale, ensuring
-                            pure water quality and extended service life in aggressive
-                            environments.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-coins"></i></div>
-                        <h3>Cost-Effective Long-Term Solution</h3>
-                        <p>
-                            HDPE pipes resist a wide range of chemicals, acids, and alkalis.
-                            Unlike metal pipes, they won't corrode, rust, or scale, ensuring
-                            pure water quality and extended service life in aggressive
-                            environments.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
-                        <h3>Environmentally Sustainable</h3>
-                        <p>
-                            HDPE pipes resist a wide range of chemicals, acids, and alkalis.
-                            Unlike metal pipes, they won't corrode, rust, or scale, ensuring
-                            pure water quality and extended service life in aggressive
-                            environments.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h3>Certified Quality Assurance</h3>
-                        <p>
-                            HDPE pipes resist a wide range of chemicals, acids, and alkalis.
-                            Unlike metal pipes, they won't corrode, rust, or scale, ensuring
-                            pure water quality and extended service life in aggressive
-                            environments.
-                        </p>
-                    </div>
-                </div>
-                <div class="features-cta">
-                    <button id="btn-request-quote" class="btn btn-primary btn-large">
-                        Request a Quote
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Application section -->
-        <section class="applications-section">
-            <div class="container apps-inner">
-                <div class="apps-header">
-                    <div class="apps-header-left">
-                        <h2>Versatile Applications Across Industries</h2>
-                        <p>From technical textiles to packaging materials, our precision-engineered machinery delivers
-                            superior performance across diverse applications.</p>
-                    </div>
-                    <div class="apps-nav">
-                        <button class="apps-arrow prev" id="apps-prev" aria-label="Previous"><i
-                                class="fas fa-chevron-left"></i></button>
-                        <button class="apps-arrow next" id="apps-next" aria-label="Next"><i
-                                class="fas fa-chevron-right"></i></button>
-                    </div>
-                </div>
-                <div class="apps-track-wrapper">
-                    <div class="apps-track" id="apps-track"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--Process section -->
-        <section class="process-section">
-            <div class="container process-inner">
-                <div class="process-header">
-                    <h2>Advanced HDPE Pipe Manufacturing Process</h2>
-                    <p>
-                        Our state-of-the-art extrusion technology ensures consistent
-                        quality, optimal material properties, and dimensional accuracy in
-                        every pipe we manufacture.
-                    </p>
-                </div>
-                <div class="process-card">
-                    <div class="process-tabs" id="process-tabs"></div>
-                    <div class="process-body">
-                        <div class="process-body-left" id="process-body-left"></div>
-                        <div class="process-body-right">
-                            <button class="process-img-arrow prev" id="process-prev">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-                            <img src="public/product_pipes.png" alt="Process step" id="process-img" />
-                            <button class="process-img-arrow next" id="process-next">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- testimonial section -->
-        <section class="testimonials-section">
-            <div class="container testimonials-inner">
-                <div class="testimonials-header">
-                    <h2>Trusted Performance. Proven Results.</h2>
-                    <p>From innovative Two-For-One Twisters to specialized heat setting machines, we deliver complete
-                        solutions for modern textile manufacturing.</p>
-                </div>
-                <div class="testimonials-track-wrapper">
-                    <div class="testimonials-track" id="testimonials-track"></div>
-                </div>
-            </div>
-        </section>
-
-        <!--Contact section -->
-        <section class="contact-section" id="contact">
-            <div class="container contact-inner">
-                <div class="contact-left">
-                    <h2>Ready to Transform Your<br>Textile Manufacturing?</h2>
-                    <p>Get a personalized consultation and quote for machinery solutions tailored to your specific
-                        production requirements.</p>
-                    <div class="contact-direct">
-                        <p>For immediate assistance, feel free to give us a direct call at
-                            <strong>+91-XXX-XXX-XXXX</strong>. You can also send us a quick email at <a
-                                href="mailto:info@meeraind.com">info@meeraind.com</a>.
-                        </p>
-                    </div>
-                </div>
-                <div class="contact-form-card">
-                    <h3>Contact Us Today</h3>
-                    <form id="contact-form" onsubmit="return false;">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="text" placeholder="Company Name">
-                        <input type="email" placeholder="Email Address" required>
-                        <div class="phone-row">
-                            <select class="phone-code">
-                                <option value="+91">+91</option>
-                                <option value="+1">+1</option>
-                                <option value="+44">+44</option>
-                                <option value="+971">+971</option>
-                            </select>
-                            <input type="tel" placeholder="7003026616">
-                        </div>
-                        <button type="submit" class="btn btn-dark">Request Custom Quote</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!--Faq section as an accordian -->
-        <section class="faq-section">
-            <div class="container faq-inner">
-                <div class="faq-header">
-                    <span class="faq-label">Frequently</span>
-                    <h2>Asked Questions</h2>
-                </div>
-                <div class="faq-list" id="faq-list"></div>
-
-                <div class="faq-catalogue-card">
-                    <div class="faq-catalogue-text">
-                        <h3>Want us to email the entire catalogue?</h3>
-                        <p>Enter your email and an expert will share the catalogue with you.</p>
-                    </div>
-                    <div class="faq-catalogue-form">
-                        <input type="email" id="catalogue-email" placeholder="Email Address">
-                        <button class="btn btn-primary" id="catalogue-btn">Request Catalogue</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- Footer section -->
-        <footer class="footer">
-            <div class="container footer-inner">
-                <!-- Top row -->
-                <div class="footer-top">
-                    <div class="footer-brand">
-                        <img src="public/headerlogo.png" alt="Mangalam HDPE Pipes">
-                    </div>
-                    <p class="footer-tagline">
-                        Premium <strong>HDPE Pipes &amp; Fittings</strong><br>
-                        Manufacturer in <strong>South India</strong>
-                    </p>
-                </div>
-                <!-- Links row -->
-                <div class="footer-links">
-                    <div class="footer-col">
-                        <h4>About Us</h4>
-                        <a href="#about">About Us</a>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Categories</h4>
-                        <a href="#">Packaging Industry Solutions</a>
-                        <a href="#">Fishnet Manufacturing</a>
-                        <a href="#">PPMF/Tapes and Twines</a>
-                        <a href="#">FIBC and Woven Sack</a>
-                        <a href="#">Carpet and Rugs Industry</a>
-                        <a href="#">Technical Textiles</a>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Products</h4>
-                        <a href="#" data-product="hdpe-pipes">HDPE Pipes</a>
-                        <a href="#" data-product="sprinkler-pipes">Sprinkler Pipes</a>
-                        <a href="#" data-product="plb-ducts">PLB Ducts</a>
-                        <a href="#" data-product="column-pipes">Column Pipes</a>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Contact</h4>
-                        <p><i class="fas fa-map-marker-alt"></i> 2/26, Road No. 2, GIDC Sachin, Surat – 394 230 Gujarat,
-                            India</p>
-                        <p><i class="fas fa-phone"></i> +91-XXX-XXX-XXXX</p>
-                        <p><i class="fas fa-envelope"></i> info@meeraind.com</p>
-                        <p><i class="fas fa-headset"></i> support@meeraind.com</p>
-                        <div class="footer-socials">
-                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" aria-label="X"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Bottom row -->
-                <div class="footer-bottom">
-                    <p>Copyright &copy; 2025 Meera Industries Limited | All Rights Reserved</p>
-                    <div class="footer-legal">
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Sitemap</a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-
-        <!--Quote modal -->
-        <div class="modal-overlay" id="quote-modal">
-            <div class="modal-box">
-                <div class="modal-header">
-                    <h3>Request a call back</h3>
-                    <button class="modal-close" data-close="quote-modal"><i class="fas fa-times"></i></button>
-                </div>
-                <form id="quote-form" onsubmit="return false;">
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="text" placeholder="Company Name">
-                    <input type="email" placeholder="Email Address" required>
-                    <div class="phone-row">
-                        <select class="phone-code">
-                            <option>+91</option>
-                            <option>+1</option>
-                            <option>+44</option>
-                            <option>+971</option>
-                        </select>
-                        <input type="tel" placeholder="7003626616">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Submit Form</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <!--Catalouge modal -->
-        <div class="modal-overlay" id="catalogue-modal">
-            <div class="modal-box">
-                <div class="modal-header">
-                    <h3>Let us email the entire catalogue to you</h3>
-                    <button class="modal-close" data-close="catalogue-modal"><i class="fas fa-times"></i></button>
-                </div>
-                <form id="catalogue-form" onsubmit="return false;">
-                    <label class="modal-label">Your Email <span class="req">*</span></label>
-                    <input type="email" id="modal-catalogue-email" placeholder="example@gmail.com" required>
-                    <label class="modal-label">Your Contact <span class="opt">(Optional)</span></label>
-                    <input type="tel" placeholder="+91-0000000000">
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Download Brochure</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
     </main>
 
+    <!-- Technica specification  -->
+    <section class="specs-section" id="tech-spec">
+        <div class="container specs-inner">
+            <div class="specs-header">
+                <h2 class="specs-title">Technical Specifications at a Glance</h2>
+                <p class="specs-subtitle">Comprehensive performance data demonstrating our commitment to quality and engineering excellence.</p>
+            </div>
+            <div class="specs-table-container">
+                <table class="specs-table">
+                    <thead>
+                        <tr>
+                            <th>PARAMETER</th>
+                            <th>SPECIFICATION</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="param">Pipe Diameter Range</td><td>20mm to 1600mm (¾" to 63")</td></tr>
+                        <tr><td class="param">Pressure Ratings</td><td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td></tr>
+                        <tr><td class="param">Standard Dimension Ratio</td><td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td></tr>
+                        <tr><td class="param">Operating Temperature</td><td>−40°C to +80°C (−40°F to +176°F)</td></tr>
+                        <tr><td class="param">Service Life</td><td>50+ Years (at 20°C, PN 10)</td></tr>
+                        <tr><td class="param">Material Density</td><td>0.95 – 0.96 g/cm³</td></tr>
+                        <tr><td class="param">Certification Standards</td><td>IS 4984, ISO 4427, ASTM D3035</td></tr>
+                        <tr><td class="param">Joint Type</td><td>Butt Fusion, Electrofusion, Mechanical</td></tr>
+                        <tr><td class="param">Coil Lengths</td><td>Up to 500m (for smaller diameters)</td></tr>
+                        <tr><td class="param">Country of Origin</td><td>🇮🇳 India</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="specs-actions">
+                <button id="download-specs" class="btn btn-outline btn-large">
+                    <i class="fas fa-download"></i> Download Full Technical Datasheet
+                </button>
+            </div>
+        </div>
+    </section>
 
+    <!-- About section -->
+    <section id="about" class="features-section">
+        <div class="container features-inner">
+            <div class="features-header">
+                <h2>Built to Last. Engineered to Perform.</h2>
+                <p>From bulk bags to technical threads, Meera delivers precision solutions for every stage of your packaging process.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card highlighted">
+                    <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                    <h3>Superior Chemical Resistance</h3>
+                    <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-bezier-curve"></i></div>
+                    <h3>Exceptional Flexibility &amp; Durability</h3>
+                    <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-cube"></i></div>
+                    <h3>Leak-Proof Fusion Welding</h3>
+                    <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-coins"></i></div>
+                    <h3>Cost-Effective Long-Term Solution</h3>
+                    <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Environmentally Sustainable</h3>
+                    <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Certified Quality Assurance</h3>
+                    <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive environments.</p>
+                </div>
+            </div>
+            <div class="features-cta">
+                <button id="btn-request-quote" class="btn btn-primary btn-large">Request a Quote</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application section -->
+    <section class="applications-section">
+        <div class="container apps-inner">
+            <div class="apps-header">
+                <div class="apps-header-left">
+                    <h2>Versatile Applications Across Industries</h2>
+                    <p>From technical textiles to packaging materials, our precision-engineered machinery delivers superior performance across diverse applications.</p>
+                </div>
+                <div class="apps-nav">
+                    <button class="apps-arrow prev" id="apps-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <button class="apps-arrow next" id="apps-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <div class="apps-track-wrapper">
+                <div class="apps-track" id="apps-track"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Process section -->
+    <section class="process-section">
+        <div class="container process-inner">
+            <div class="process-header">
+                <h2>Advanced HDPE Pipe Manufacturing Process</h2>
+                <p>Our state-of-the-art extrusion technology ensures consistent quality, optimal material properties, and dimensional accuracy in every pipe we manufacture.</p>
+            </div>
+            <div class="process-card">
+                <div class="process-tabs" id="process-tabs"></div>
+                <div class="process-body">
+                    <div class="process-body-left" id="process-body-left"></div>
+                    <div class="process-body-right">
+                        <button class="process-img-arrow prev" id="process-prev"><i class="fas fa-chevron-left"></i></button>
+                        <img src="public/product_pipes.png" alt="Process step" id="process-img">
+                        <button class="process-img-arrow next" id="process-next"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonia section -->
+    <section class="testimonials-section">
+        <div class="container testimonials-inner">
+            <div class="testimonials-header">
+                <h2>Trusted Performance. Proven Results.</h2>
+                <p>From innovative Two-For-One Twisters to specialized heat setting machines, we deliver complete solutions for modern textile manufacturing.</p>
+            </div>
+            <div class="testimonials-track-wrapper">
+                <div class="testimonials-track" id="testimonials-track"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact section -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-inner">
+            <div class="contact-left">
+                <h2>Ready to Transform Your<br>Textile Manufacturing?</h2>
+                <p>Get a personalized consultation and quote for machinery solutions tailored to your specific production requirements.</p>
+                <div class="contact-direct">
+                    <p>For immediate assistance, feel free to give us a direct call at <strong>+91-XXX-XXX-XXXX</strong>. You can also send us a quick email at <a href="mailto:info@meeraind.com">info@meeraind.com</a>.</p>
+                </div>
+            </div>
+            <div class="contact-form-card">
+                <h3>Contact Us Today</h3>
+                <form id="contact-form" onsubmit="return false;">
+                    <input type="text"   placeholder="Full Name"      required>
+                    <input type="text"   placeholder="Company Name">
+                    <input type="email"  placeholder="Email Address"  required>
+                    <div class="phone-row">
+                        <select class="phone-code">
+                            <option value="+91">+91</option>
+                            <option value="+1">+1</option>
+                            <option value="+44">+44</option>
+                            <option value="+971">+971</option>
+                        </select>
+                        <input type="tel" placeholder="7003026616">
+                    </div>
+                    <button type="submit" class="btn btn-dark">Request Custom Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Faq section as an accordian -->
+    <section class="faq-section">
+        <div class="container faq-inner">
+            <div class="faq-header">
+                <span class="faq-label">Frequently</span>
+                <h2>Asked Questions</h2>
+            </div>
+            <div class="faq-list" id="faq-list"></div>
+
+            <div class="faq-catalogue-card">
+                <div class="faq-catalogue-text">
+                    <h3>Want us to email the entire catalogue?</h3>
+                    <p>Enter your email and an expert will share the catalogue with you.</p>
+                </div>
+                <div class="faq-catalogue-form">
+                    <input type="email" id="catalogue-email" placeholder="Email Address">
+                    <button class="btn btn-primary" id="catalogue-btn">Request Catalogue</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <!-- Top row -->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="public/headerlogo.png" alt="Mangalam HDPE Pipes">
+                </div>
+                <p class="footer-tagline">
+                    Premium <strong>HDPE Pipes &amp; Fittings</strong><br>
+                    Manufacturer in <strong>South India</strong>
+                </p>
+            </div>
+            <!-- Links row -->
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <a href="#about">About Us</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <a href="#">Packaging Industry Solutions</a>
+                    <a href="#">Fishnet Manufacturing</a>
+                    <a href="#">PPMF/Tapes and Twines</a>
+                    <a href="#">FIBC and Woven Sack</a>
+                    <a href="#">Carpet and Rugs Industry</a>
+                    <a href="#">Technical Textiles</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <a href="#" data-product="hdpe-pipes">HDPE Pipes</a>
+                    <a href="#" data-product="sprinkler-pipes">Sprinkler Pipes</a>
+                    <a href="#" data-product="plb-ducts">PLB Ducts</a>
+                    <a href="#" data-product="column-pipes">Column Pipes</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 2/26, Road No. 2, GIDC Sachin, Surat – 394 230 Gujarat, India</p>
+                    <p><i class="fas fa-phone"></i> +91-XXX-XXX-XXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@meeraind.com</p>
+                    <p><i class="fas fa-headset"></i> support@meeraind.com</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="X"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom row -->
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2025 Meera Industries Limited | All Rights Reserved</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote modal -->
+    <div class="modal-overlay" id="quote-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Request a call back</h3>
+                <button class="modal-close" data-close="quote-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <form id="quote-form" onsubmit="return false;">
+                <input type="text"  placeholder="Full Name"     required>
+                <input type="text"  placeholder="Company Name">
+                <input type="email" placeholder="Email Address" required>
+                <div class="phone-row">
+                    <select class="phone-code">
+                        <option>+91</option><option>+1</option>
+                        <option>+44</option><option>+971</option>
+                    </select>
+                    <input type="tel" placeholder="7003626616">
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Submit Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--Catalouge modal -->
+    <div class="modal-overlay" id="catalogue-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Let us email the entire catalogue to you</h3>
+                <button class="modal-close" data-close="catalogue-modal"><i class="fas fa-times"></i></button>
+            </div>
+            <form id="catalogue-form" onsubmit="return false;">
+                <label class="modal-label">Your Email <span class="req">*</span></label>
+                <input type="email" id="modal-catalogue-email" placeholder="example@gmail.com" required>
+                <label class="modal-label">Your Contact <span class="opt">(Optional)</span></label>
+                <input type="tel" placeholder="+91-0000000000">
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Download Brochure</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Toast for messeges -->
     <div class="toast-container" id="toast-container"></div>
 
     <script src="modal.js"></script>  
-    <script src="toast.js"></script>
-    <script src="script.js"></script>
+    <script src="toast.js"></script>  
+    <script src="script.js"></script> 
 </body>
-
 </html>

@@ -38,7 +38,7 @@ button {
   font-family: inherit;
 }
 
-/* Layout */
+/* --- Layout --- */
 .container {
   max-width: 1200px;
   width: 100%;
@@ -48,7 +48,7 @@ button {
   align-items: center;
   justify-content: space-between;
 }
-/* Column containers */
+/* --- Column containers --- */
 .trusted-inner,
 .specs-inner,
 .features-inner,
@@ -63,7 +63,7 @@ button {
   gap: 0;
 }
 
-/* button designv */
+/* --- button designv --- */
 .btn {
   display: inline-block;
   padding: 0.8rem 1.8rem;
@@ -122,17 +122,17 @@ button {
   background: #000;
 }
 
-/* ----- Navigation Header ------ */
+/* --- TopBar header --- */
 .topbar {
   background: var(--white);
-  padding: 1.2rem 0;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
-  z-index: 10000;
+  z-index: 1000;
   box-shadow: var(--shadow);
 }
 .logo img {
-  height: 63px;
+  height: 60px;
 }
 
 .nav-links {
@@ -155,11 +155,8 @@ button {
   transition: transform 0.3s ease;
 }
 
-
-/* --- DropDown --- */
-
-
-.nav-dropdown {
+/* --- Dropdown --- */
+.dropdown {
   position: relative;
   padding: 1rem 0;
 }
@@ -196,7 +193,7 @@ button {
   color: var(--blue);
 }
 
-.mobile-flip {
+.mobile-toggle {
   display: none;
   background: none;
   border: none;
@@ -205,46 +202,42 @@ button {
   cursor: pointer;
 }
 
-
-
-/* productnavigation */
-.productnavigation-container {
+/* --- Breadcrums --- */
+.breadcrumb-container {
   background: #fcfcfc;
   padding: 1rem 0;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid #eee;
 }
 .breadcrumbs {
   display: flex;
   gap: 0.5rem;
-  color: var(--muted);
   font-size: 0.9rem;
+  color: var(--muted);
 }
-
 .breadcrumbs li:not(:last-child)::after {
   content: ">";
-  margin-left: 0.6rem;
-  color: #cccccc;
+  margin-left: 0.5rem;
+  color: #ccc;
 }
 .breadcrumbs .active {
   color: var(--blue);
-  font-weight: 700;
+  font-weight: 600;
 }
 
-/* --- product view with carousel and zoom functionality ---*/
-.product-view {
+/* --- product List with carousel and zoom functionality --- */
+.product-showcase {
   padding: 3rem 0 5rem;
   background: var(--white);
 }
-.product-view__grid {
+.showcase-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 4rem;
   align-items: start;
 }
 
-
-/* Gallery */
-.product-gallery__main {
+/* --- Product List --- */
+.product-gallery {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -264,7 +257,7 @@ button {
   transition: opacity 0.15s ease;
 }
 
-/* Zoom — container must NOT clip the result panel */
+/* --- Zoom — container must NOT clip the result panel --- */
 .main-image-container {
   position: relative;
   border: 2px solid #eee;
@@ -308,7 +301,7 @@ button {
   left: calc(100% + 16px); 
 }
 
-/* Gallery nav arrows */
+/* --- Gallery nav arrows --- */
 .gallery-nav {
   position: absolute;
   top: 50%;
@@ -337,9 +330,7 @@ button {
   right: 15px;
 }
 
-
-
-/* Thumbnails */
+/* --- Thumbnails --- */
 .thumbnail-carousel {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -366,7 +357,7 @@ button {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Product info */
+/* --- Product info --- */
 .certification-badges {
   display: flex;
   gap: 1rem;
@@ -405,8 +396,7 @@ button {
   font-size: 0.9rem;
 }
 
-
-/* Meta card */
+/* --- Meta card --- */
 .product-meta-card {
   background: var(--white);
   border: 1px solid #eee;
@@ -510,10 +500,8 @@ button {
   }
 }
 
-
-
-/* --- specification section --- */
-.specs-section { 
+/* --- Technical specification section --- */
+.specs-section {
   background: #0a1128;
   padding: 6rem 0;
   color: var(--white);
@@ -578,12 +566,10 @@ button {
   text-align: center;
 }
 
-
-/* Features section */
+/* --- Features section --- */
 .features-section {
   background: var(--bg);
   padding: 6rem 0;
-  cursor: pointer;
 }
 .features-header {
   margin-bottom: 3rem;
@@ -648,9 +634,7 @@ button {
   flex: 0;
 }
 
-
-/* --- Application Section --- */
-
+/* Applications section */
 .applications-section {
   background: var(--bg);
   padding: 5rem 0 0;
@@ -748,7 +732,7 @@ button {
   opacity: 0.85;
 }
 
-/* --- Process Section --- */
+/* Process Section */
 .process-section {
   background: var(--bg);
   padding: 5rem 0;
@@ -879,7 +863,6 @@ button {
   right: 10px;
 }
 
-
 /* --- Testimonail section --- */
 .testimonials-section {
   background: var(--bg);
@@ -979,8 +962,6 @@ button {
   color: var(--muted);
 }
 
-
-
 /* --- Contact section --- */
 .contact-section {
   background: var(--blue);
@@ -1059,8 +1040,7 @@ button {
   flex: 1;
 }
 
-
-/* --- FAQ Section ---  */
+/* -- FAQ Section ---  */
 .faq-section {
   background: var(--white);
   padding: 6rem 0;
@@ -1174,8 +1154,6 @@ button {
   border-color: var(--blue);
 }
 
-
-
 /* --- Modal --- */
 .modal-overlay {
   position: fixed;
@@ -1281,7 +1259,6 @@ button {
   padding: 0.75rem 1.75rem;
 }
 
-
 /* --- Toast --- */
 .toast-container {
   position: fixed;
@@ -1381,8 +1358,6 @@ button {
     transform: translateY(12px);
   }
 }
-
-
 
 /* --- Footer section --- */
 .footer {
@@ -1588,4 +1563,3 @@ button {
     align-items: flex-start;
   }
 }
-
