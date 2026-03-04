@@ -648,3 +648,135 @@ button {
   flex: 0;
 }
 
+
+
+/* --- Process Section --- */
+.process-section {
+  background: var(--bg);
+  padding: 5rem 0;
+}
+.process-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  max-width: 620px;
+  align-self: center;
+}
+.process-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.process-header p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.process-card {
+  background: var(--white);
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+}
+.process-tabs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.process-tab {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--muted);
+  background: none;
+  border: none;
+  transition: var(--ease);
+  white-space: nowrap;
+}
+.process-tab.active {
+  background: var(--blue);
+  color: var(--white);
+}
+.process-tab-connector {
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+  min-width: 12px;
+}
+.process-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+.process-body-left h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.process-body-left p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.process-bullet {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.process-bullet::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--blue);
+  flex-shrink: 0;
+}
+.process-body-right {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.process-body-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.process-img-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  transition: var(--ease);
+}
+.process-img-arrow:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+.process-img-arrow.prev {
+  left: 10px;
+}
+.process-img-arrow.next {
+  right: 10px;
+}

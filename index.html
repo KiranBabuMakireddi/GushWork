@@ -1,267 +1,367 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gushwork | Mangalam HDPE Pipes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Sticky Navigation section -->
     <header class="topbar">
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="/public/headerlogo.png" alt="Logo of resource">
-            </a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about" class="nav-link">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="#products" class="nav-link dropbtn">
-                            Products <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown-content">
-                            <li><a href="#" data-product="hdpe-pipes">HDPE Pipes</a></li>
-                            <li><a href="#" data-product="sprinkler-pipes">Sprinkler Pipes</a></li>
-                            <li><a href="#" data-product="plb-ducts">PLB Ducts</a></li>
-                            <li><a href="#" data-product="column-pipes">Column Pipes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="/public/headerlogo.png" alt="Logo of resource" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link">About Us</a></li>
+            <li class="dropdown">
+              <a href="#products" class="nav-link dropbtn">
+                Products <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="dropdown-content">
+                <li><a href="#" data-product="hdpe-pipes">HDPE Pipes</a></li>
+                <li>
+                  <a href="#" data-product="sprinkler-pipes">Sprinkler Pipes</a>
+                </li>
+                <li><a href="#" data-product="plb-ducts">PLB Ducts</a></li>
+                <li>
+                  <a href="#" data-product="column-pipes">Column Pipes</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#contact" class="btn btn-primary">Contact Us</a></li>
+          </ul>
+        </nav>
+        <button class="mobile-toggle" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </header>
 
     <main>
+      <!-- Product Navigation section of the product -->
+      <nav class="productnavigation-container">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li><a href="#">Products</a></li>
+            <li>
+              <span class="active" id="current-breadcrumb">HDPE Pipes</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-        <!-- Product Navigation section of the product -->
-        <nav class="productnavigation-container">
-            <div class="container">
-                <ul class="breadcrumbs">
-                    <li><a href="#">Products</a></li>
-                    <li><span class="active" id="current-breadcrumb">HDPE Pipes</span></li>
-                </ul>
+      <!-- Product carousel with all relevent details -->
+
+      <section class="product-view">
+        <div class="container product-view__grid">
+          <!-- Carousel with zoom functionality -->
+          <div class="product-gallery__main">
+            <div class="main-image-container" id="zoom-container">
+              <img
+                src="/public/product_pipes.png"
+                alt="Product Image"
+                id="main-product-image"
+              />
+              <div class="zoom-lens" id="zoom-lens"></div>
+              <div class="zoom-result" id="zoom-result"></div>
+              <button class="gallery-nav prev" aria-label="Previous image">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="gallery-nav next" aria-label="Next image">
+                <i class="fas fa-chevron-right"></i>
+              </button>
             </div>
-        </nav>
-
-
-        <!-- Product carousel with all relevent details -->
-
-        <section class="product-view">
-            <div class="container product-view__grid">
-                <!-- Carousel with zoom functionality -->
-                <div class="product-gallery__main">
-                    <div class="main-image-container" id="zoom-container">
-                        <img src="/public/product_pipes.png" alt="Product Image" id="main-product-image">
-                        <div class="zoom-lens" id="zoom-lens"></div>
-                        <div class="zoom-result" id="zoom-result"></div>
-                        <button class="gallery-nav prev" aria-label="Previous image"><i
-                                class="fas fa-chevron-left"></i></button>
-                        <button class="gallery-nav next" aria-label="Next image"><i
-                                class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="thumbnail-carousel">
-                        <div class="thumb active"><img src="/public/product_pipes.png" alt="Thumb 1"></div>
-                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 2"></div>
-                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 3"></div>
-                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 4"></div>
-                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 5"></div>
-                        <div class="thumb"><img src="/public/product_pipes.png" alt="Thumb 6"></div>
-                    </div>
-                </div>
-
-                <!-- Product Descriptions -->
-                <div class="product-info">
-                    <div class="certification-badges" id="product-badges">
-                    </div>
-                    <h1 class="product-title" id="product-title">
-                        Premium HDPE Pipes &amp; Coils for Modern Infrastructure
-                    </h1>
-                    <ul class="product-features" id="product-features">
-                    </ul>
-                    <div class="product-meta-card">
-                        <div class="price-section">
-                            <span class="label">Price Range</span>
-                            <h3 class="price" id="product-price">₹4,80,000 – 7,90,000</h3>
-                        </div>
-                        <div class="tag-row">
-                            <span class="tag-pill shipping" id="product-shipping">Shipping: 6–12 days</span>
-                            <span class="tag-pill returns" id="product-returns">Returns: Within 7 days</span>
-                        </div>
-                        <div class="certifications-text" id="product-certs-text">
-                            Certifications: ISO Certified, BIS Certified
-                        </div>
-                    </div>
-                    <div class="product-actions">
-                        <button id="btn-get-quote" class="btn btn-primary btn-large">Get Custom Quote</button>
-                        <a href="#tech-spec" class="btn btn-secondary btn-large">
-                            View Technical Specs <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="thumbnail-carousel">
+              <div class="thumb active">
+                <img src="/public/product_pipes.png" alt="Thumb 1" />
+              </div>
+              <div class="thumb">
+                <img src="/public/product_pipes.png" alt="Thumb 2" />
+              </div>
+              <div class="thumb">
+                <img src="/public/product_pipes.png" alt="Thumb 3" />
+              </div>
+              <div class="thumb">
+                <img src="/public/product_pipes.png" alt="Thumb 4" />
+              </div>
+              <div class="thumb">
+                <img src="/public/product_pipes.png" alt="Thumb 5" />
+              </div>
+              <div class="thumb">
+                <img src="/public/product_pipes.png" alt="Thumb 6" />
+              </div>
             </div>
-        </section>
+          </div>
 
-
-        <!-- Product footer section -->
-        <section class="trusted-by">
-            <div class="container trusted-inner">
-                <p class="section-label">Trusted by Hundreds of Companies Globally</p>
-                <div class="logo-ticker">
-                    <div class="ticker-track">
-                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
-                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
-                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
-                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
-                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
-                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
-                        <!-- Duplicates for seamless loop -->
-                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
-                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
-                        <div class="ticker-item"><img src="/public/euroflex_main_logo.png" alt="Euroflex"></div>
-                    </div>
-                </div>
+          <!-- Product Descriptions -->
+          <div class="product-info">
+            <div class="certification-badges" id="product-badges"></div>
+            <h1 class="product-title" id="product-title">
+              Premium HDPE Pipes &amp; Coils for Modern Infrastructure
+            </h1>
+            <ul class="product-features" id="product-features"></ul>
+            <div class="product-meta-card">
+              <div class="price-section">
+                <span class="label">Price Range</span>
+                <h3 class="price" id="product-price">₹4,80,000 – 7,90,000</h3>
+              </div>
+              <div class="tag-row">
+                <span class="tag-pill shipping" id="product-shipping"
+                  >Shipping: 6–12 days</span
+                >
+                <span class="tag-pill returns" id="product-returns"
+                  >Returns: Within 7 days</span
+                >
+              </div>
+              <div class="certifications-text" id="product-certs-text">
+                Certifications: ISO Certified, BIS Certified
+              </div>
             </div>
-        </section>
-
-
-        <!-- Technica specification  -->
-        <section class="specs-section" id="tech-spec">
-            <div class="container specs-inner">
-                <div class="specs-header">
-                    <h2 class="specs-title">Technical Specifications at a Glance</h2>
-                    <p class="specs-subtitle">Comprehensive performance data demonstrating our commitment to quality and
-                        engineering excellence.</p>
-                </div>
-                <div class="specs-table-container">
-                    <table class="specs-table">
-                        <thead>
-                            <tr>
-                                <th>PARAMETER</th>
-                                <th>SPECIFICATION</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="param">Pipe Diameter Range</td>
-                                <td>20mm to 1600mm (¾" to 63")</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Pressure Ratings</td>
-                                <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Standard Dimension Ratio</td>
-                                <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Operating Temperature</td>
-                                <td>−40°C to +80°C (−40°F to +176°F)</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Service Life</td>
-                                <td>50+ Years (at 20°C, PN 10)</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Material Density</td>
-                                <td>0.95 – 0.96 g/cm³</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Certification Standards</td>
-                                <td>IS 4984, ISO 4427, ASTM D3035</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Joint Type</td>
-                                <td>Butt Fusion, Electrofusion, Mechanical</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Coil Lengths</td>
-                                <td>Up to 500m (for smaller diameters)</td>
-                            </tr>
-                            <tr>
-                                <td class="param">Country of Origin</td>
-                                <td>🇮🇳 India</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="specs-actions">
-                    <button id="download-specs" class="btn btn-outline btn-large">
-                        <i class="fas fa-download"></i> Download Full Technical Datasheet
-                    </button>
-                </div>
+            <div class="product-actions">
+              <button id="btn-get-quote" class="btn btn-primary btn-large">
+                Get Custom Quote
+              </button>
+              <a href="#tech-spec" class="btn btn-secondary btn-large">
+                View Technical Specs <i class="fas fa-chevron-right"></i>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-
-        <!-- Features section -->
-        <section id="about" class="features-section">
-            <div class="container features-inner">
-                <div class="features-header">
-                    <h2>Built to Last. Engineered to Perform.</h2>
-                    <p>From bulk bags to technical threads, Meera delivers precision solutions for every stage of your
-                        packaging process.</p>
-                </div>
-                <div class="features-grid">
-                    <div class="feature-card highlighted">
-                        <div class="feature-icon"><i class="fas fa-flask"></i></div>
-                        <h3>Superior Chemical Resistance</h3>
-                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
-                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
-                            aggressive environments.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-bezier-curve"></i></div>
-                        <h3>Exceptional Flexibility &amp; Durability</h3>
-                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
-                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
-                            aggressive environments.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-cube"></i></div>
-                        <h3>Leak-Proof Fusion Welding</h3>
-                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
-                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
-                            aggressive environments.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-coins"></i></div>
-                        <h3>Cost-Effective Long-Term Solution</h3>
-                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
-                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
-                            aggressive environments.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
-                        <h3>Environmentally Sustainable</h3>
-                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
-                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
-                            aggressive environments.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
-                        <h3>Certified Quality Assurance</h3>
-                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
-                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
-                            aggressive environments.</p>
-                    </div>
-                </div>
-                <div class="features-cta">
-                    <button id="btn-request-quote" class="btn btn-primary btn-large">Request a Quote</button>
-                </div>
+      <!-- Product footer section -->
+      <section class="trusted-by">
+        <div class="container trusted-inner">
+          <p class="section-label">Trusted by Hundreds of Companies Globally</p>
+          <div class="logo-ticker">
+            <div class="ticker-track">
+              <div class="ticker-item">
+                <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
+              </div>
+              <div class="ticker-item">
+                <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
+              </div>
+              <div class="ticker-item">
+                <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
+              </div>
+              <div class="ticker-item">
+                <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
+              </div>
+              <div class="ticker-item">
+                <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
+              </div>
+              <div class="ticker-item">
+                <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
+              </div>
+              <!-- Duplicates for seamless loop -->
+              <div class="ticker-item">
+                <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
+              </div>
+              <div class="ticker-item">
+                <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
+              </div>
+              <div class="ticker-item">
+                <img src="/public/euroflex_main_logo.png" alt="Euroflex" />
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
+      <!-- Technica specification  -->
+      <section class="specs-section" id="tech-spec">
+        <div class="container specs-inner">
+          <div class="specs-header">
+            <h2 class="specs-title">Technical Specifications at a Glance</h2>
+            <p class="specs-subtitle">
+              Comprehensive performance data demonstrating our commitment to
+              quality and engineering excellence.
+            </p>
+          </div>
+          <div class="specs-table-container">
+            <table class="specs-table">
+              <thead>
+                <tr>
+                  <th>PARAMETER</th>
+                  <th>SPECIFICATION</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="param">Pipe Diameter Range</td>
+                  <td>20mm to 1600mm (¾" to 63")</td>
+                </tr>
+                <tr>
+                  <td class="param">Pressure Ratings</td>
+                  <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
+                </tr>
+                <tr>
+                  <td class="param">Standard Dimension Ratio</td>
+                  <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
+                </tr>
+                <tr>
+                  <td class="param">Operating Temperature</td>
+                  <td>−40°C to +80°C (−40°F to +176°F)</td>
+                </tr>
+                <tr>
+                  <td class="param">Service Life</td>
+                  <td>50+ Years (at 20°C, PN 10)</td>
+                </tr>
+                <tr>
+                  <td class="param">Material Density</td>
+                  <td>0.95 – 0.96 g/cm³</td>
+                </tr>
+                <tr>
+                  <td class="param">Certification Standards</td>
+                  <td>IS 4984, ISO 4427, ASTM D3035</td>
+                </tr>
+                <tr>
+                  <td class="param">Joint Type</td>
+                  <td>Butt Fusion, Electrofusion, Mechanical</td>
+                </tr>
+                <tr>
+                  <td class="param">Coil Lengths</td>
+                  <td>Up to 500m (for smaller diameters)</td>
+                </tr>
+                <tr>
+                  <td class="param">Country of Origin</td>
+                  <td>🇮🇳 India</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="specs-actions">
+            <button id="download-specs" class="btn btn-outline btn-large">
+              <i class="fas fa-download"></i> Download Full Technical Datasheet
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features section -->
+      <section id="about" class="features-section">
+        <div class="container features-inner">
+          <div class="features-header">
+            <h2>Built to Last. Engineered to Perform.</h2>
+            <p>
+              From bulk bags to technical threads, Meera delivers precision
+              solutions for every stage of your packaging process.
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card highlighted">
+              <div class="feature-icon"><i class="fas fa-flask"></i></div>
+              <h3>Superior Chemical Resistance</h3>
+              <p>
+                HDPE pipes resist a wide range of chemicals, acids, and alkalis.
+                Unlike metal pipes, they won't corrode, rust, or scale, ensuring
+                pure water quality and extended service life in aggressive
+                environments.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="fas fa-bezier-curve"></i>
+              </div>
+              <h3>Exceptional Flexibility &amp; Durability</h3>
+              <p>
+                HDPE pipes resist a wide range of chemicals, acids, and alkalis.
+                Unlike metal pipes, they won't corrode, rust, or scale, ensuring
+                pure water quality and extended service life in aggressive
+                environments.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-cube"></i></div>
+              <h3>Leak-Proof Fusion Welding</h3>
+              <p>
+                HDPE pipes resist a wide range of chemicals, acids, and alkalis.
+                Unlike metal pipes, they won't corrode, rust, or scale, ensuring
+                pure water quality and extended service life in aggressive
+                environments.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-coins"></i></div>
+              <h3>Cost-Effective Long-Term Solution</h3>
+              <p>
+                HDPE pipes resist a wide range of chemicals, acids, and alkalis.
+                Unlike metal pipes, they won't corrode, rust, or scale, ensuring
+                pure water quality and extended service life in aggressive
+                environments.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+              <h3>Environmentally Sustainable</h3>
+              <p>
+                HDPE pipes resist a wide range of chemicals, acids, and alkalis.
+                Unlike metal pipes, they won't corrode, rust, or scale, ensuring
+                pure water quality and extended service life in aggressive
+                environments.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+              <h3>Certified Quality Assurance</h3>
+              <p>
+                HDPE pipes resist a wide range of chemicals, acids, and alkalis.
+                Unlike metal pipes, they won't corrode, rust, or scale, ensuring
+                pure water quality and extended service life in aggressive
+                environments.
+              </p>
+            </div>
+          </div>
+          <div class="features-cta">
+            <button id="btn-request-quote" class="btn btn-primary btn-large">
+              Request a Quote
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--Process section -->
+      <section class="process-section">
+        <div class="container process-inner">
+          <div class="process-header">
+            <h2>Advanced HDPE Pipe Manufacturing Process</h2>
+            <p>
+              Our state-of-the-art extrusion technology ensures consistent
+              quality, optimal material properties, and dimensional accuracy in
+              every pipe we manufacture.
+            </p>
+          </div>
+          <div class="process-card">
+            <div class="process-tabs" id="process-tabs"></div>
+            <div class="process-body">
+              <div class="process-body-left" id="process-body-left"></div>
+              <div class="process-body-right">
+                <button class="process-img-arrow prev" id="process-prev">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <img
+                  src="public/product_pipe.png"
+                  alt="Process step"
+                  id="process-img"
+                />
+                <button class="process-img-arrow next" id="process-next">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
