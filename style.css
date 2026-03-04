@@ -1380,3 +1380,111 @@ button {
     align-items: flex-start;
   }
 }
+
+
+
+
+/* --- Modal --- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-box {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transform: translateY(16px);
+  transition: transform 0.25s ease;
+}
+.modal-overlay.open .modal-box {
+  transform: translateY(0);
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.modal-header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 1rem;
+  padding: 0.2rem;
+  transition: color 0.2s;
+}
+.modal-close:hover {
+  color: var(--dark);
+}
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  margin-bottom: 0.85rem;
+  transition: border-color 0.2s;
+  background: var(--white);
+}
+.modal-box input:focus,
+.modal-box select:focus {
+  border-color: var(--blue);
+}
+.modal-box .phone-row {
+  display: flex;
+  gap: 0.5rem;
+}
+.modal-box .phone-row select {
+  width: 85px;
+  flex-shrink: 0;
+}
+.modal-box .phone-row input {
+  flex: 1;
+}
+.modal-label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 0.35rem;
+}
+.modal-label .req {
+  color: var(--red);
+}
+.modal-label .opt {
+  color: var(--muted);
+  font-weight: 400;
+}
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+.modal-footer .btn {
+  flex: 0;
+  padding: 0.75rem 1.75rem;
+}

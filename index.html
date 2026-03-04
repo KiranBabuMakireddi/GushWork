@@ -447,7 +447,7 @@
                 <!-- Top row -->
                 <div class="footer-top">
                     <div class="footer-brand">
-                        <img src="public/logo.png" alt="Mangalam HDPE Pipes">
+                        <img src="public/headerlogo.png" alt="Mangalam HDPE Pipes">
                     </div>
                     <p class="footer-tagline">
                         Premium <strong>HDPE Pipes &amp; Fittings</strong><br>
@@ -503,8 +503,55 @@
         </footer>
 
 
+        <!--Quote modal -->
+        <div class="modal-overlay" id="quote-modal">
+            <div class="modal-box">
+                <div class="modal-header">
+                    <h3>Request a call back</h3>
+                    <button class="modal-close" data-close="quote-modal"><i class="fas fa-times"></i></button>
+                </div>
+                <form id="quote-form" onsubmit="return false;">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Company Name">
+                    <input type="email" placeholder="Email Address" required>
+                    <div class="phone-row">
+                        <select class="phone-code">
+                            <option>+91</option>
+                            <option>+1</option>
+                            <option>+44</option>
+                            <option>+971</option>
+                        </select>
+                        <input type="tel" placeholder="7003626616">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Submit Form</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!--Catalouge modal -->
+        <div class="modal-overlay" id="catalogue-modal">
+            <div class="modal-box">
+                <div class="modal-header">
+                    <h3>Let us email the entire catalogue to you</h3>
+                    <button class="modal-close" data-close="catalogue-modal"><i class="fas fa-times"></i></button>
+                </div>
+                <form id="catalogue-form" onsubmit="return false;">
+                    <label class="modal-label">Your Email <span class="req">*</span></label>
+                    <input type="email" id="modal-catalogue-email" placeholder="example@gmail.com" required>
+                    <label class="modal-label">Your Contact <span class="opt">(Optional)</span></label>
+                    <input type="tel" placeholder="+91-0000000000">
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Download Brochure</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
     </main>
 
+    <script src="modal.js"></script>  
     <script src="script.js"></script>
 </body>
 
