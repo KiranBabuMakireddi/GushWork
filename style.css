@@ -204,3 +204,28 @@ button {
   color: var(--blue);
   cursor: pointer;
 }
+
+
+
+/* productnavigation */
+.productnavigation-container {
+  background: #fcfcfc;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.breadcrumbs {
+  display: flex;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  content: ">";
+  margin-left: 0.6rem;
+  color: #cccccc;
+}
+.breadcrumbs .active {
+  color: var(--blue);
+  font-weight: 700;
+}
