@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Sticky Navigation section -->
     <header class="topbar">
@@ -39,7 +41,7 @@
 
     <main>
 
-         <!-- Product Navigation section of the product -->
+        <!-- Product Navigation section of the product -->
         <nav class="productnavigation-container">
             <div class="container">
                 <ul class="breadcrumbs">
@@ -53,15 +55,17 @@
         <!-- Product carousel with all relevent details -->
 
         <section class="product-view">
-             <div class="container product-view__grid">
+            <div class="container product-view__grid">
                 <!-- Carousel with zoom functionality -->
                 <div class="product-gallery__main">
                     <div class="main-image-container" id="zoom-container">
                         <img src="/public/product_pipes.png" alt="Product Image" id="main-product-image">
                         <div class="zoom-lens" id="zoom-lens"></div>
                         <div class="zoom-result" id="zoom-result"></div>
-                        <button class="gallery-nav prev" aria-label="Previous image"><i class="fas fa-chevron-left"></i></button>
-                        <button class="gallery-nav next" aria-label="Next image"><i class="fas fa-chevron-right"></i></button>
+                        <button class="gallery-nav prev" aria-label="Previous image"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="gallery-nav next" aria-label="Next image"><i
+                                class="fas fa-chevron-right"></i></button>
                     </div>
                     <div class="thumbnail-carousel">
                         <div class="thumb active"><img src="/public/product_pipes.png" alt="Thumb 1"></div>
@@ -106,7 +110,7 @@
         </section>
 
 
-         <!-- Product footer section -->
+        <!-- Product footer section -->
         <section class="trusted-by">
             <div class="container trusted-inner">
                 <p class="section-label">Trusted by Hundreds of Companies Globally</p>
@@ -128,12 +132,13 @@
         </section>
 
 
-         <!-- Technica specification  -->
+        <!-- Technica specification  -->
         <section class="specs-section" id="tech-spec">
             <div class="container specs-inner">
                 <div class="specs-header">
                     <h2 class="specs-title">Technical Specifications at a Glance</h2>
-                    <p class="specs-subtitle">Comprehensive performance data demonstrating our commitment to quality and engineering excellence.</p>
+                    <p class="specs-subtitle">Comprehensive performance data demonstrating our commitment to quality and
+                        engineering excellence.</p>
                 </div>
                 <div class="specs-table-container">
                     <table class="specs-table">
@@ -144,16 +149,46 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td class="param">Pipe Diameter Range</td><td>20mm to 1600mm (¾" to 63")</td></tr>
-                            <tr><td class="param">Pressure Ratings</td><td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td></tr>
-                            <tr><td class="param">Standard Dimension Ratio</td><td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td></tr>
-                            <tr><td class="param">Operating Temperature</td><td>−40°C to +80°C (−40°F to +176°F)</td></tr>
-                            <tr><td class="param">Service Life</td><td>50+ Years (at 20°C, PN 10)</td></tr>
-                            <tr><td class="param">Material Density</td><td>0.95 – 0.96 g/cm³</td></tr>
-                            <tr><td class="param">Certification Standards</td><td>IS 4984, ISO 4427, ASTM D3035</td></tr>
-                            <tr><td class="param">Joint Type</td><td>Butt Fusion, Electrofusion, Mechanical</td></tr>
-                            <tr><td class="param">Coil Lengths</td><td>Up to 500m (for smaller diameters)</td></tr>
-                            <tr><td class="param">Country of Origin</td><td>🇮🇳 India</td></tr>
+                            <tr>
+                                <td class="param">Pipe Diameter Range</td>
+                                <td>20mm to 1600mm (¾" to 63")</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Pressure Ratings</td>
+                                <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Standard Dimension Ratio</td>
+                                <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Operating Temperature</td>
+                                <td>−40°C to +80°C (−40°F to +176°F)</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Service Life</td>
+                                <td>50+ Years (at 20°C, PN 10)</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Material Density</td>
+                                <td>0.95 – 0.96 g/cm³</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Certification Standards</td>
+                                <td>IS 4984, ISO 4427, ASTM D3035</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Joint Type</td>
+                                <td>Butt Fusion, Electrofusion, Mechanical</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Coil Lengths</td>
+                                <td>Up to 500m (for smaller diameters)</td>
+                            </tr>
+                            <tr>
+                                <td class="param">Country of Origin</td>
+                                <td>🇮🇳 India</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -164,10 +199,69 @@
                 </div>
             </div>
         </section>
-        
+
+
+        <!-- Features section -->
+        <section id="about" class="features-section">
+            <div class="container features-inner">
+                <div class="features-header">
+                    <h2>Built to Last. Engineered to Perform.</h2>
+                    <p>From bulk bags to technical threads, Meera delivers precision solutions for every stage of your
+                        packaging process.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card highlighted">
+                        <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                        <h3>Superior Chemical Resistance</h3>
+                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
+                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
+                            aggressive environments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-bezier-curve"></i></div>
+                        <h3>Exceptional Flexibility &amp; Durability</h3>
+                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
+                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
+                            aggressive environments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-cube"></i></div>
+                        <h3>Leak-Proof Fusion Welding</h3>
+                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
+                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
+                            aggressive environments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-coins"></i></div>
+                        <h3>Cost-Effective Long-Term Solution</h3>
+                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
+                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
+                            aggressive environments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Environmentally Sustainable</h3>
+                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
+                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
+                            aggressive environments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Certified Quality Assurance</h3>
+                        <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they
+                            won't corrode, rust, or scale, ensuring pure water quality and extended service life in
+                            aggressive environments.</p>
+                    </div>
+                </div>
+                <div class="features-cta">
+                    <button id="btn-request-quote" class="btn btn-primary btn-large">Request a Quote</button>
+                </div>
+            </div>
+        </section>
 
     </main>
- 
-    <script src="script.js"></script> 
+
+    <script src="script.js"></script>
 </body>
+
 </html>

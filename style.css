@@ -577,3 +577,74 @@ button {
 .specs-actions {
   text-align: center;
 }
+
+
+/* Features section */
+.features-section {
+  background: var(--bg);
+  padding: 6rem 0;
+  cursor: pointer;
+}
+.features-header {
+  margin-bottom: 3rem;
+}
+.features-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.features-header p {
+  color: var(--muted);
+  max-width: 560px;
+  font-size: 1rem;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.feature-card {
+  background: var(--white);
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: var(--ease);
+}
+.feature-card:hover {
+  box-shadow: 0 8px 30px rgba(43, 57, 144, 0.1);
+  transform: translateY(-4px);
+}
+.feature-card.highlighted {
+  border: 2px solid var(--blue);
+}
+.feature-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #f0f2f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+.feature-icon i {
+  color: var(--blue);
+  font-size: 1.1rem;
+}
+.feature-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.feature-card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+.features-cta {
+  margin-top: 3rem;
+}
+.features-cta .btn-large {
+  flex: 0;
+}
+
