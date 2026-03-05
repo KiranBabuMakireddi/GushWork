@@ -4,7 +4,7 @@
         "id": "hdpe-pipes",
         "name": "HDPE Pipes",
         "title": "Premium HDPE Pipes & Coils for Modern Infrastructure",
-        "image": "public/product_pipes.png",
+        "image": "/images/product_pipes.png",
         "breadcrumbs": ["Products", "HDPE Pipes"],
         "features": [
             "Leak-Proof Fusion Joints",
@@ -22,7 +22,7 @@
         "id": "sprinkler-pipes",
         "name": "Sprinkler Pipes",
         "title": "Durable Sprinkler System Pipes for Efficient Irrigation",
-        "image": "public/product_pipes.png",
+        "image": "/images/product_pipes.png",
         "breadcrumbs": ["Products", "Sprinkler Pipes"],
         "features": [
             "UV Resistance",
@@ -40,7 +40,7 @@
         "id": "plb-ducts",
         "name": "PLB Ducts",
         "title": "Permanently Lubricated Ducts for Optical Fiber Cables",
-        "image": "public/product_pipes.png",
+        "image": "/images/product_pipes.png",
         "breadcrumbs": ["Products", "PLB Ducts"],
         "features": [
             "Low Friction Inner Layer",
@@ -58,7 +58,7 @@
         "id": "column-pipes",
         "name": "Column Pipes",
         "title": "High-Pressure Submersible Column Pipes",
-        "image": "public/product_pipes.png",
+        "image": "/images/product_pipes.png",
         "breadcrumbs": ["Products", "Column Pipes"],
         "features": [
             "Square Thread Design",
